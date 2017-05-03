@@ -1,0 +1,1982 @@
+﻿/* *** Türk AntiVirus Responsive by zinzinzibidi *** */
+
+@import url(normalize.css);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;/*Eğer alegreya sans bulunamaz ise sans-serif çalışsın diyoruz.*/
+    font-size: 16px;
+    color: white;
+    cursor: default;
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* *** ****** Desktop and Laptops *** ****** */
+@media screen and (min-width : 960px) { /*Burada masaüstü için ayar yapmış oluyoruz yani 960px ve yukarısı için çalışsın aşadağıdaki css kodlarım diyorum.*/
+
+    /* *** nav *** */  /*NAV bölgemi farklı farklı alanlara böldüm Logo*/
+
+    nav {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        background: #222;
+    }
+
+    #nav {
+        width: 940px;
+        height: 40px;
+        position: relative;
+        margin: auto;
+    }
+
+    #nav-container {
+        width: 490px;
+        height: 40px;
+        position: relative;
+        float: right;
+    }
+
+    #nav-bar-container {
+        width: 484px;
+        height: 3px;
+        position: relative;
+        float: right;
+    }
+
+    #nav-bar {
+        width: 120px;
+        height: 3px;
+        position: relative;
+        background: #c85a01;
+        left: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    #nav-logo {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/nav-logo.png);
+        cursor: pointer;
+    }
+
+    .nav {
+        width: 120px;
+        height: 37px;/*Dikkat edersen aynı yeri (nav-container alanını nav-bar-container ile paylaşıyor ve bu yüzden ikisinin toplam yüksekliği nav-bar container kadar olmalı işte burada sağlanıyor..)*/
+        line-height: 36px;
+        position: relative;
+        float: right;
+        border-right: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        .nav:hover {
+            background: #111;
+        }
+
+    .nav-last-child {
+        border-left: 1px solid black;
+    }
+
+    /* nav mobile */
+
+    #nav-mobile {
+        display: none;
+    }
+
+    /* *** header *** */
+
+    header {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        background: url(/Content/img/header.png) #133F5A no-repeat;
+        background-size: cover;/*TARAYICININ ÇÖZÜNÜRLÜĞÜ NE OLURSA OLSUN ONA GÖRE YENİDEN OPTİMİZE OLUP BOYUTLANACAK.*/
+    }
+
+    #header-container {
+        width: 940px;
+        padding: 0 10px;
+        height: 600px;
+        position: relative;
+        margin: auto;
+    }
+
+    #header-main {
+        width: 480px;
+        height: 600px;
+        position: relative;
+        float: left;
+    }
+
+    #header-main-buffer {
+        width: 480px;
+        padding: 0 10px;
+        height: 240px;
+        position: relative;
+    }
+
+    #header-main h1 {
+        font-size: 46px;
+    }
+
+    #header-main h2 {
+        font-size: 24px;
+    }
+
+    #header-download-button {
+        width: 180px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        background: #c85a01;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        #header-download-button:hover {
+            background: #a74c02;
+        }
+
+    #header-logo {
+        width: 460px;
+        height: 600px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/header-logo.png);
+        background-size: cover;
+    }
+
+    /* *** contents *** */
+
+    /* content */
+
+    #content {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background: #E5E9EA;
+        z-index: 2;
+    }
+
+    #content-container {
+        width: 940px;
+        padding: 0 10px;
+        height: 400px;
+        position: relative;
+        margin: auto;
+    }
+
+    #content-main {
+        width: 480px;
+        height: 400px;
+        position: relative;
+        float: left;
+        color: #111;
+    }
+
+        #content-main h2 {
+            font-size: 32px;
+        }
+
+        #content-main h3 {
+            margin-top: -20px;
+            font-size: 20px;
+            color: #333;
+        }
+
+    #content-logo {
+        width: 460px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+        #content-logo img {
+            width: 460px;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+        }
+
+    /* content 2 */
+
+    #content2 {
+        width: 100%;
+        position: relative;
+        background: #fafafa;
+        z-index: 1;
+    }
+
+    #content2-container {
+        width: 940px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        position: relative;
+        margin: auto;
+        color: #333;
+    }
+
+        #content2-container h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        #content2-container h3 {
+            margin-top: -20px;
+            font-size: 20px;
+            color: #555;
+            text-align: center;
+        }
+
+    .content2-tile {
+        width: 205px;
+        padding: 15px;
+        height: 250px;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    .content2-tile-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content2-tile-img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        margin: auto;
+        transition: all .2s ease-in-out;
+    
+        cursor: pointer;
+    }
+
+        .content2-tile-img:hover {
+            top: -10px;
+        }
+
+    /* *** subscribe *** */
+
+    #subscribe {
+        width: 100%;
+        position: relative;
+        background: #19567b;
+    }
+
+    #subscribe-container {
+        width: 940px;
+        padding: 0 10px;
+        height: 80px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    #subscribe-text {
+        width: 480px;
+        height: 80px;
+        position: relative;
+        float: left;
+    }
+
+    #subscribe-text-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #subscribe-input {
+        width: 420px;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    .email {
+        width: 300px;
+        height: 40px;
+        text-indent: 10px;/*metin 10 px boşlukla yazılsın.*/
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        float: left;
+        border: none;
+        outline: none;
+        color: black;
+    }
+
+    .button {
+        width: 80px;
+        height: 42px;
+        line-height: 44px;
+        position: relative;
+        float: left;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        transition: all .2s ease-in-out;
+        color: black;
+    }
+
+        .button:hover {
+            opacity: .8;/*hani renk aynı oranda soluklaşıyordu ya buttonlarda renk tonu değişmeden işte o olayımız. */
+        }
+
+    /* *** footer *** */
+
+    footer {
+        width: 100%;
+        position: relative;
+        background: #133f5a;
+    }
+
+    #footer-container {
+        width: 940px;
+        padding: 15px 10px;
+        height: 150px; 
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    .footer {
+        width: 282px;
+        padding-right: 15px;
+        height: 120px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-right: 1px solid white;
+        position: relative;
+        float: left;
+        text-align: justify;
+    }
+
+        .footer:nth-child(2) {
+            font-size: 14px;
+            width: 170px;
+            text-align: center; 
+        }
+
+        .footer:last-child {
+            border-right: none;
+            width: 394px;
+        }
+
+    #social-media {
+        width: 130px;
+        height: 60px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #facebook {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/facebook.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #twitter {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        background: url(/Content/img/twitter.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        #facebook:hover,
+        #twitter:hover {
+            top: -10px;
+        }
+
+    /* *** copyright *** */
+
+    #copyright {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        background: #222;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+/* *** ************************************************ Old Smartphones ************************************************ *** */
+@media screen and (min-width : 320px) and (max-width : 479px) {
+    /* *** nav *** */
+
+    nav {
+        display: none;
+    }
+
+    /* nav-mobile */
+
+    #nav-mobile {
+        width: 100%;
+        position: relative;
+        background: #222;
+        display: inherit;
+    }
+
+    .nav-mobile {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .nav-mobile-button {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 1px dotted #777;
+        transition: all .2s ease-in-out;
+    }
+
+        .nav-mobile-button:hover {
+            background: #111;
+        }
+
+    .nav-mobile-button-last {
+        border-bottom: none;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .nav-mobile-menu-logo {
+        margin-top: 10px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+
+    .nav-mobile-menu-text {
+        position: relative;
+        display: inline-block;
+        top: -15px;
+    }
+
+    /* *** header *** */
+
+    header {
+        width: 100%;
+        /*DİKKAT EDİLDİĞİ GİBİ RESPONSİVELEŞTİRME OLAYLARINDA GENEL OLARAK  height olayı kaldırılır !!! */
+        position: relative;
+        background: url(/Content/img/header.png) #133F5A no-repeat;
+        background-size: cover;
+    }
+
+    #header-container {
+        width: 300px; /*Mesela burada 320-479 arasında yaptığım için verdiğim paddinglerle birlikte olan width'i alıp ona göre düzenlemelerimi yapıyorum.*/
+        padding: 0 10px;
+        height: 800px;
+        position: relative;
+        margin: auto;
+    }
+
+    #header-main {
+        width: 320px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+    #header-main-buffer {
+        width: 300px;
+        /*padding: 0 10px;*/
+        height: 120px;
+        position: relative;
+    }
+
+    #header-main h1 {
+        font-size: 36px;
+    }
+
+    #header-main h2 {
+        font-size: 20px;
+    }
+
+    #header-download-button {
+        width: 180px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        background: #c85a01;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        #header-download-button:hover {
+            background: #a74c02;
+        }
+
+    #header-logo {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/header-logo.png);
+        background-size: cover;
+    }
+
+    /* *** contents *** */
+
+    /* content */
+
+    #content {
+        width: 100%;
+        position: relative;
+        background: #E5E9EA;
+        z-index: 2;
+    }
+
+    #content-container {
+        width: 300px;
+        height: 620px;
+        padding: 10px 10px;
+        position: relative;
+        margin: auto;
+    }
+
+    #content-main {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        float: left;
+        color: #111;
+    }
+
+        #content-main h2 {
+            font-size: 24px;
+            margin-top: -10px;
+        }
+
+        #content-main h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+    #content-logo {
+        width: 280px;
+        height: 220px;
+        position: relative;
+        float: left;
+    }
+
+        #content-logo img {
+            width: 280px;
+            height: 300px;
+            position: absolute;
+        }
+
+    /* content 2 */
+
+    #content2 {
+        width: 100%;
+        position: relative;
+        background: #fafafa;
+        z-index: 1;
+    }
+
+    #content2-container {
+        width: 300px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        position: relative;
+        margin: auto;
+        color: #333;
+    }
+
+        #content2-container h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #content2-container h3 {
+            margin-top: -10px;
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+    .content2-tile {
+        width: 205px;
+        padding: 15px;
+        height: 250px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+
+    .content2-tile-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content2-tile-img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        margin: auto;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        .content2-tile-img:hover {
+            top: -10px;
+        }
+
+    /* *** subscribe *** */
+
+    #subscribe {
+        width: 100%;
+        position: relative;
+        background: #19567b;
+    }
+
+    #subscribe-container {
+        width: 300px;
+        padding: 0 10px;
+        height: 140px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    #subscribe-text {
+        width: 300px;
+        height: 60px;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    #subscribe-text-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #subscribe-input {
+        width: 260px;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    .email {
+        width: 178px;
+        height: 40px;
+        text-indent: 10px;
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        float: left;
+        border: none;
+        outline: none;
+        color: black;
+    }
+
+    .button {
+        width: 70px;
+        height: 42px;
+        line-height: 44px;
+        position: relative;
+        float: left;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        transition: all .2s ease-in-out;
+        color: black;
+    }
+
+        .button:hover {
+            opacity: .8;
+        }
+
+    /* *** footer *** */
+
+    footer {
+        width: 100%;
+        position: relative;
+        background: #133f5a;
+    }
+
+    #footer-container {
+        width: 300px;
+        padding: 15px 10px;
+        height: 400px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    .footer {
+        width: 282px;
+        margin-top: 15px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+
+        .footer:nth-child(2) {
+            font-size: 18px;
+            width: 170px;
+            text-align: center;
+        }
+
+
+    #social-media {
+        width: 130px;
+        height: 60px;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #facebook {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/facebook.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #twitter {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        background: url(/Content/img/twitter.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        #facebook:hover,
+        #twitter:hover {
+            top: -10px;
+        }
+
+    /* *** copyright *** */
+
+    #copyright {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        background: #222;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+/* *** ************************************************ New Smartphones ******************************************** *** * */
+@media screen and (min-width : 480px) and (max-width : 639px) {
+    /* *** nav *** */
+
+    nav {
+        display: none;
+    }
+
+    /* nav-mobile */
+
+    #nav-mobile {
+        width: 100%;
+        position: relative;
+        background: #222;
+        display: inherit;
+    }
+
+    .nav-mobile {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .nav-mobile-button {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 1px dotted #777;
+        transition: all .2s ease-in-out;
+    }
+
+        .nav-mobile-button:hover {
+            background: #111;
+        }
+
+    .nav-mobile-button-last {
+        border-bottom: none;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .nav-mobile-menu-logo {
+        margin-top: 10px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+
+    .nav-mobile-menu-text {
+        position: relative;
+        display: inline-block;
+        top: -15px;
+    }
+
+    /* *** header *** */
+
+    header {
+        width: 100%;
+        position: relative;
+        background: url(/Content/img/header.png) #133F5A no-repeat;
+        background-size: cover;
+    }
+
+    #header-container {
+        width: 460px;
+        padding: 0 10px;
+        height: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    #header-main {
+        width: 460px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+    #header-main-buffer {
+        width: 460px;
+        /*padding: 0 10px;*/
+        height: 120px;
+        position: relative;
+    }
+
+    #header-main h1 {
+        font-size: 36px;
+    }
+
+    #header-main h2 {
+        font-size: 20px;
+    }
+
+    #header-download-button {
+        width: 180px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        background: #c85a01;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        #header-download-button:hover {
+            background: #a74c02;
+        }
+
+    #header-logo {
+        width: 460px;
+        height: 600px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/header-logo.png);
+        background-size: cover;
+    }
+
+    /* *** contents *** */
+
+    /* content */
+
+    #content {
+        width: 100%;
+        position: relative;
+        background: #E5E9EA;
+        z-index: 2;
+    }
+
+    #content-container { /*New Mobile Phones değeri için 480-639 arasındaydı masaüstündeki gibi width'i 940 yapamam çünkü aralık dışında.*/
+        width: 460px;
+        height: 640px;
+        padding: 10px 10px;
+        position: relative;
+        margin: auto;
+    }
+
+    #content-main {
+        width: 460px;
+        position: relative;
+        float: left;
+        color: #111;
+    }
+
+        #content-main h2 {
+            font-size: 24px;
+            margin-top: -20px;
+        }
+
+        #content-main h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+    #content-logo {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        float: left;
+        margin-left: 30px;
+    }
+
+        #content-logo img {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 0px;
+        }
+
+    /* content 2 */
+
+    #content2 {
+        width: 100%;
+        position: relative;
+        background: #fafafa;
+        z-index: 1;
+    }
+
+    #content2-container {
+        width: 460px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        position: relative;
+        margin: auto;
+        color: #333;
+    }
+
+        #content2-container h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #content2-container h3 {
+            margin-top: -10px;
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+    .content2-tile {
+        width: 205px;
+        padding: 15px;
+        height: 250px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        /*TABLETLER İÇİN BU KISMI DOUBLE SIRALAMA YAPICAZ VE float:left vererek işin içinden çıkıyoruz.*/
+
+    }
+
+    .content2-tile-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content2-tile-img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        margin: auto;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        .content2-tile-img:hover {
+            top: -10px;
+        }
+
+    /* *** subscribe *** */
+
+    #subscribe {
+        width: 100%;
+        position: relative;
+        background: #19567b;
+    }
+
+    #subscribe-container {
+        width: 460px;
+        padding: 0 10px;
+        height: 140px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    #subscribe-text {
+        width: 460px;
+        height: 60px;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    #subscribe-text-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #subscribe-input {
+        width: 420px;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    .email {
+        width: 338px;
+        height: 40px;
+        text-indent: 10px;
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        float: left;
+        border: none;
+        outline: none;
+        color: black;
+    }
+
+    .button {
+        width: 70px;
+        height: 42px;
+        line-height: 44px;
+        position: relative;
+        float: left;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        transition: all .2s ease-in-out;
+        color: black;
+    }
+
+        .button:hover {
+            opacity: .8;
+        }
+
+    /* *** footer *** */
+
+    footer {
+        width: 100%;
+        position: relative;
+        background: #133f5a;
+    }
+
+    #footer-container {
+        width: 460px;
+        padding: 15px 10px;
+        height: 400px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    .footer {
+        width: 282px;
+        margin-top: 15px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+
+        .footer:nth-child(2) {
+            font-size: 18px;
+            width: 170px;
+            text-align: center;
+        }
+
+
+    #social-media {
+        width: 130px;
+        height: 60px;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #facebook {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/facebook.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #twitter {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        background: url(/Content/img/twitter.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        #facebook:hover,
+        #twitter:hover {
+            top: -10px;
+        }
+
+    /* *** copyright *** */
+
+    #copyright {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        background: #222;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+/* *** ******************************************* New Smartphones and Mini Tablets ************************************ *** */
+@media screen and (min-width : 640px) and (max-width : 719px) {
+    /* *** nav *** */
+
+    nav {
+        display: none;
+    }
+
+    /* nav-mobile */
+
+    #nav-mobile {
+        width: 100%;
+        position: relative;
+        background: #222;
+        display: inherit;
+    }
+
+    .nav-mobile {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .nav-mobile-button {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 1px dotted #777;
+        transition: all .2s ease-in-out;
+    }
+
+        .nav-mobile-button:hover {
+            background: #111;
+        }
+
+    .nav-mobile-button-last {
+        border-bottom: none;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .nav-mobile-menu-logo {
+        margin-top: 10px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+
+    .nav-mobile-menu-text {
+        position: relative;
+        display: inline-block;
+        top: -15px;
+    }
+
+    /* *** header *** */
+
+    header {
+        width: 100%;
+        position: relative;
+        background: url(/Content/img/header.png) #133F5A no-repeat;
+        background-size: cover;
+    }
+
+    #header-container {
+        width: 620px;
+        padding: 0 10px;
+        height: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    #header-main {
+        width: 620px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+    #header-main-buffer {
+        width: 620px;
+        /*padding: 0 10px;*/
+        height: 120px;
+        position: relative;
+    }
+
+    #header-main h1 {
+        font-size: 36px;
+    }
+
+    #header-main h2 {
+        font-size: 20px;
+    }
+
+    #header-download-button {
+        width: 180px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        background: #c85a01;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        #header-download-button:hover {
+            background: #a74c02;
+        }
+
+    #header-logo {
+        width: 460px;
+        height: 600px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/header-logo.png);
+        background-size: cover;
+    }
+
+    /* *** contents *** */
+
+    /* content */
+
+    #content {
+        width: 100%;
+        position: relative;
+        background: #E5E9EA;
+        z-index: 2;
+    }
+
+    #content-container {
+        width: 620px;
+        height: 570px;
+        padding: 10px 10px;
+        position: relative;
+        margin: auto;
+    }
+
+    #content-main {
+        width: 620px;
+        height: 270px;
+        position: relative;
+        float: left;
+        color: #111;
+    }
+
+        #content-main h2 {
+            font-size: 24px;
+            margin-top: -20px;
+        }
+
+        #content-main h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+    #content-logo {
+        width: 460px;
+        height: 400px;
+        position: relative;
+        float: left;
+        margin-left: 100px;
+    }
+
+        #content-logo img {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 0px;
+        }
+
+    /* content 2 */
+
+    #content2 {
+        width: 100%;
+        position: relative;
+        background: #fafafa;
+        z-index: 1;
+    }
+
+    #content2-container {
+        width: 620px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        position: relative;
+        margin: auto;
+        color: #333;
+    }
+
+        #content2-container h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #content2-container h3 {
+            margin-top: -10px;
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+    .content2-tile {
+        width: 280px;
+        padding: 15px;
+        height: 250px;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    .content2-tile-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content2-tile-img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        margin: auto;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        .content2-tile-img:hover {
+            top: -10px;
+        }
+
+    /* *** subscribe *** */
+
+    #subscribe {
+        width: 100%;
+        position: relative;
+        background: #19567b;
+    }
+
+    #subscribe-container {
+        width: 620px;
+        padding: 0 10px;
+        height: 80px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    #subscribe-text {
+        width: 250px;
+        height: 80px;
+        position: relative;
+        float: left;
+    }
+
+    #subscribe-text-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #subscribe-input {
+        width: 330px;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    .email {
+        width: 238px;
+        height: 40px;
+        text-indent: 10px;
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        float: left;
+        border: none;
+        outline: none;
+        color: black;
+    }
+
+    .button {
+        width: 80px;
+        height: 42px;
+        line-height: 44px;
+        position: relative;
+        float: left;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        transition: all .2s ease-in-out;
+        color: black;
+    }
+
+        .button:hover {
+            opacity: .8;
+        }
+
+    /* *** footer *** */
+
+    footer {
+        width: 100%;
+        position: relative;
+        background: #133f5a;
+    }
+
+    #footer-container {
+        width: 620px;
+        padding: 15px 10px;
+        height: 400px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    .footer {
+        width: 282px;
+        margin-top: 15px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+
+        .footer:nth-child(2) {
+            font-size: 18px;
+            width: 170px;
+            text-align: center;
+        }
+
+
+    #social-media {
+        width: 130px;
+        height: 60px;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #facebook {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/facebook.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #twitter {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        background: url(/Content/img/twitter.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        #facebook:hover,
+        #twitter:hover {
+            top: -10px;
+        }
+
+    /* *** copyright *** */
+
+    #copyright {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        background: #222;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+/* *** ****** New Smartphones and Tablets ****** *** */
+@media screen and (min-width : 720px) and (max-width : 959px) {
+    /* *** nav *** */
+
+    nav {
+        display: none;
+    }
+
+    /* nav-mobile */
+
+    #nav-mobile {
+        width: 100%;
+        position: relative;
+        background: #222;
+        display: inherit;
+    }
+
+    .nav-mobile {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .nav-mobile-button {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 1px dotted #777;
+        transition: all .2s ease-in-out;
+    }
+
+        .nav-mobile-button:hover {
+            background: #111;
+        }
+
+    .nav-mobile-button-last {
+        border-bottom: none;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .nav-mobile-menu-logo {
+        margin-top: 10px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+
+    .nav-mobile-menu-text {
+        position: relative;
+        display: inline-block;
+        top: -15px;
+    }
+
+    /* *** header *** */
+
+    header {
+        width: 100%;
+        position: relative;
+        background: url(/Content/img/header.png) #133F5A no-repeat;
+        background-size: cover;
+    }
+
+    #header-container {
+        width: 700px;
+        padding: 0 10px;
+        height: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    #header-main {
+        width: 700px;
+        height: 400px;
+        position: relative;
+        float: left;
+    }
+
+    #header-main-buffer {
+        width: 700px;
+        /*padding: 0 10px;*/
+        height: 120px;
+        position: relative;
+    }
+
+    #header-main h1 {
+        font-size: 36px;
+    }
+
+    #header-main h2 {
+        font-size: 20px;
+    }
+
+    #header-download-button {
+        width: 180px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        background: #c85a01;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+        #header-download-button:hover {
+            background: #a74c02;
+        }
+
+    #header-logo {
+        width: 460px;
+        height: 600px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/header-logo.png);
+        background-size: cover;
+    }
+
+    /* *** contents *** */
+
+    /* content */
+
+    #content {
+        width: 100%;
+        position: relative;
+        background: #E5E9EA;
+        z-index: 2;
+    }
+
+    #content-container {
+        width: 700px;
+        height: 540px;
+        padding: 10px 10px;
+        position: relative;
+        margin: auto;
+    }
+
+    #content-main {
+        width: 700px;
+        height: 240px;
+        position: relative;
+        float: left;
+        color: #111;
+    }
+
+        #content-main h2 {
+            font-size: 24px;
+            margin-top: -20px;
+        }
+
+        #content-main h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+    #content-logo {
+        width: 460px;
+        height: 400px;
+        position: relative;
+        float: left;
+        margin-left: 160px;
+    }
+
+        #content-logo img {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            top: 0px;
+        }
+
+    /* content 2 */
+
+    #content2 {
+        width: 100%;
+        position: relative;
+        background: #fafafa;
+        z-index: 1;
+    }
+
+    #content2-container {
+        width: 700px;
+        padding: 0 10px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        position: relative;
+        margin: auto;
+        color: #333;
+    }
+
+        #content2-container h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #content2-container h3 {
+            margin-top: -10px;
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+    .content2-tile {
+        width: 320px;
+        padding: 15px;
+        height: 250px;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    .content2-tile-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content2-tile-img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        margin: auto;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        .content2-tile-img:hover {
+            top: -10px;
+        }
+
+    /* *** subscribe *** */
+
+    #subscribe {
+        width: 100%;
+        position: relative;
+        background: #19567b;
+    }
+
+    #subscribe-container {
+        width: 700px;
+        padding: 0 10px;
+        height: 80px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    #subscribe-text {
+        width: 250px;
+        height: 80px;
+        position: relative;
+        float: left;
+    }
+
+    #subscribe-text-heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #subscribe-input {
+        width: 410px;
+        padding: 20px;
+        height: 40px;
+        position: relative;
+        float: left;
+    }
+
+    .email {
+        width: 318px;
+        height: 40px;
+        text-indent: 10px;
+        font-size: 16px;
+        line-height: 40px;
+        position: relative;
+        float: left;
+        border: none;
+        outline: none;
+        color: black;
+    }
+
+    .button {
+        width: 80px;
+        height: 42px;
+        line-height: 44px;
+        position: relative;
+        float: left;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        transition: all .2s ease-in-out;
+        color: black;
+    }
+
+        .button:hover {
+            opacity: .8;
+        }
+
+    /* *** footer *** */
+
+    footer {
+        width: 100%;
+        position: relative;
+        background: #133f5a;
+    }
+
+    #footer-container {
+        width: 700px;
+        padding: 15px 10px;
+        height: 150px;
+        position: relative;
+        margin: auto;
+        color: white;
+    }
+
+    .footer {
+        width: 282px;
+        padding-right: 15px;
+        height: 120px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-right: 1px solid white;
+        position: relative;
+        float: left;
+        text-align: justify;
+    }
+
+        .footer:nth-child(2) {
+            font-size: 14px;
+            width: 170px;
+            text-align: center;
+        }
+
+        .footer:last-child {
+            border-right: none;
+            width: 156px;
+        }
+
+    #social-media {
+        width: 130px;
+        height: 60px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #facebook {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        background: url(/Content/img/facebook.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #twitter {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        background: url(/Content/img/twitter.png);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+
+        #facebook:hover,
+        #twitter:hover {
+            top: -10px;
+        }
+
+    /* *** copyright *** */
+
+    #copyright {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        background: #222;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+}

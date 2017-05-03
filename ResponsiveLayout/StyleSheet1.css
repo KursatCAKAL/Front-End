@@ -1,0 +1,238 @@
+﻿body{
+    width:100%;
+    height:1200px;
+    margin:0px;
+     background-color:#1a2121;
+}
+
+/*----------------------------------Desktop App----------------------------------*/
+@media screen and (min-width:960px ){
+    /*----------------------NAVİGATOR----------------------------*/
+nav{
+    width:100%;
+    height:120px;
+    position:relative;
+   background:#1a2121;
+  }
+#nav
+{
+    width:940px;
+    height:120px;
+    position:relative;
+    margin: auto;
+  }
+#nav-container{
+    float:right;
+    margin:auto;
+    height:120px;
+    text-align:center;
+    position:relative;
+  
+}
+        #nav-logo{
+    
+            width:100px;
+            height:100px;
+            float:left;
+            margin:auto;
+           }
+        #nav-logo img{
+            padding-top:10px;   
+            width:100px;
+            height:100px;
+            transition: all .2s ease-in-out;
+            opacity:.6;
+        }
+            #nav-logo img:hover{
+                transform: scale(1.2);
+                opacity:1;
+            }
+.nav {
+    width: 120px;
+    line-height: 120px;
+    float: left;
+    position: relative;
+      
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    margin-left:10px;
+}
+      
+   .nav:first-child{
+      
+   }
+   #nav-mobile{
+       display:none;
+   }
+    /*----------------------FOOTER----------------------------*/
+   .footer-social-container{
+    display: flex;
+    font-size: 1rem;
+    width: 100vw;
+    height: 290px;
+    background: #88a400;
+    align-items: flex-end;
+    justify-content: center;
+}
+.social{
+  margin-bottom:40px;
+  font-size: 1.5rem;
+  border: 3px solid transparent;
+  transition: font-size .6s, color .6s;
+  margin-left:40px;
+  cursor:pointer;transform: scale(2.0);
+} 
+.bigger {
+  font-size: 2.25rem;
+  color: #88a400;
+}
+.medium{
+  font-size: 1.75rem;
+  color: purple;
+}
+.smaller {
+  font-size: 1.6rem;
+  color: #d6950d;
+}
+ #footer-social{
+        display:inherit;
+    }
+#mfooter-social{
+    display:none;
+}
+
+.fa-facebook-square:hover{color:blue;transform: scale(2.6);}
+.fa-twitter-square:hover{color:#1f6a82;transform: scale(2.6);}
+.fa-linkedin-square:hover{color:#00a3a3;transform: scale(2.6);}
+.fa-twitter-square:hover{color:aliceblue;transform: scale(2.6);}
+.fa-github-square:hover{color:silver;transform: scale(2.6);}
+.fa-codepen:hover{color:black;transform: scale(2.6);}
+.fa-envelope:hover{color:darkred;transform: scale(2.6);}
+}
+/*----------------------------------Mobile 1----------------------------------*/
+@media screen and (min-width:20px) and (max-width:959px) {
+    nav{
+        display:none;
+    }
+
+    #nav-mobile{
+        width:100%;
+        position:relative;
+        background:#1a2121;
+        display:inherit;
+    }
+    .nav-mobile-content
+    {
+        width:100%;
+        position:relative;
+        margin:auto;
+    }
+    .nav-mobile{
+        width:100%;
+        height:60px;
+        line-height:60px;
+        text-align:center;
+        position:relative;
+        margin:auto;
+        cursor:pointer;
+        font-weight:bold;
+        border-bottom:1px groove black;
+        transition:all 700ms ease-in-out;
+    }
+    
+    .nav-mobile:hover{
+        background:#232c2c;
+    }
+
+    .nav-mobile contact{
+            border-bottom:none;
+        }
+    .menu-items{
+            display:none;
+         
+    }
+    .menu-items a{
+           color:#b7c63f;
+           font-weight:normal;
+    }
+
+    .nav-mobile-menu-logo{
+     
+        margin-top: 10px;
+        margin-left: -15px;
+        display: inline-block;
+    }
+    
+    .nav-mobile-menutext{
+        position: relative;
+        margin:auto;
+        font-family:'Microsoft JhengHei UI';
+        font-size:20px;
+       
+            }
+    .ortalıbutton{
+        padding-left:200px;
+        width:240px;
+        margin:auto;
+        cursor:pointer;
+    }
+    .ortalıbutton img{
+        width:60px;
+        height:60px;
+        padding-top:10px;
+        margin-left:-6px;
+    
+           }
+    a{
+        text-decoration-line:none;
+    }
+    /*--------------------------------FOOTER---------------------------------*/
+    #footer-social{
+        display:none;
+    }
+    #mfooter-social{
+    display:inherit;
+}
+
+
+       .mfooter-social-container{
+    display: flex;
+    font-size: 1rem;
+    width: 100vw;
+    height: 290px;
+    background: #88a400;
+    align-items: flex-end;
+    justify-content: center;
+}
+.msocial{
+  margin-bottom:40px;
+  font-size: 1.5rem;
+  border: 3px solid transparent;
+  transition: font-size .6s, color .6s;
+  cursor:pointer;transform: scale(1.0);
+} 
+.bigger {
+  font-size: 2.25rem;
+  color: #88a400;
+}
+.medium{
+  font-size: 1.75rem;
+  color: purple;
+}
+.smaller {
+  font-size: 1.6rem;
+  color: #d6950d;
+}
+
+.mfa-facebook-square:hover{color:blue;transform: scale(1.6);}
+.mfa-twitter-square:hover{color:#1f6a82;transform: scale(1.6);}
+.mfa-linkedin-square:hover{color:#00a3a3;transform: scale(1.6);}
+.mfa-twitter-square:hover{color:aliceblue;transform: scale(1.6);}
+.mfa-github-square:hover{color:silver;transform: scale(1.6);}
+.mfa-codepen:hover{color:black;transform: scale(1.6);}
+.mfa-envelope:hover{color:darkred;transform: scale(1.6);}
+}
+
+
+

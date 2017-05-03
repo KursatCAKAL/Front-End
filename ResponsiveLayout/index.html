@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="OnlyNavStyleShhet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+     <script src="Scripts/JavaScript.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div id="nav">
+            <div id="nav-logo">
+                <img src="Component/image/HomButton.png" />
+            </div>
+            <div id="nav-container">
+                <div class="container gray highlightTextIn">
+                   <div class="nav home"><a href="?" alt="HOME">HOME</a></div> 
+                   <div class="nav article"><a href="?" alt="ARTICLES">ARTICLES</a></div>
+                   <div class="nav porfolio"><a href="?" alt="PORTFOLIO">PORTFOLIO</a></div>
+                   <div class="nav about" ><a href="?"alt="ABOUT">ABOUT</a></div> 
+                   <div class="nav contact" ><a href="?" alt="CONTACT">CONTACT</a></div> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+        <div id="nav-mobile">
+            <div class="nav-mobile-content">
+                <div id="nav-mobile button">
+                    
+
+                    <div class="ortalıbutton">
+                        
+                        <div class="deneme"><img class="nav-mobile-menu-logo" src="Component/image/HomButton.png" alt="menu logo" /></div>
+                        <div class="nav-mobile-menutext"></div>
+
+                    </div>
+                    
+
+                </div>
+                <div class="menu-items nav-mobile-menutext">
+                   
+                        <div class="nav-mobile home"><a href="#" alt="HOME">HOME</a></div>
+                        <div class="nav-mobile article"><a href="#" alt="ARTICLES">ARTICLES</a></div>
+                        <div class="nav-mobile porfolio"><a href="#" alt="PORTFOLIO">PORTFOLIO</a></div>
+                        <div class="nav-mobile about"><a href="#" alt="ABOUT">ABOUT</a></div>
+                        <div class="nav-mobile contact"><a href="#" alt="CONTACT">CONTACT</a></div>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.ortalıbutton').click(function () {
+                $('.menu-items').toggle(700);
+            });
+        });
+    </script>
+   
+    <div style="background-color:#1a2121; width:100%; height:700px;"></div>
+    <div id="footer-social">
+
+        <div class="footer-social-container">
+            <span class="social fa fa-facebook-square"></span>
+            <span class="social fa fa-twitter-square"></span>
+            <span class="social fa fa-linkedin-square"></span>
+            <span class="social fa fa-github-square"></span>
+            <span class="social fa fa-codepen"></span>
+            <span class="social fa fa-envelope"></span>
+        </div>
+
+    </div>
+
+    <div id="mfooter-social">
+
+        <div class="mfooter-social-container">
+            <span class="msocial fa fa-facebook-square"></span>
+            <span class="msocial fa fa-twitter-square"></span>
+            <span class="msocial fa fa-linkedin-square"></span>
+            <span class="msocial fa fa-github-square"></span>
+            <span class="msocial fa fa-codepen"></span>
+            <span class="msocial fa fa-envelope"></span>
+        </div>
+
+    </div>
+    
+</body>
+</html>
