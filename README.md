@@ -2,7 +2,7 @@
 Bu repository front-end etkinliklerini içerecek.
 Responsive Layout
 ![alt text](https://github.com/KursatCAKAL/Front-End/blob/master/responsive_layout.png)
-![alt text](https://github.com/KursatCAKAL/Front-End/blob/master/ResponsiveMenuBar.png)
+![alt text](https://github.com/KursatCAKAL/Front-End/blob/master/ResponsiveMenuBar.png)<br>
 Pre Loader Eksek
 ![alt text](https://github.com/KursatCAKAL/Front-End/blob/master/PreLoader/preview.png)
 Pre Loader Kum
